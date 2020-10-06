@@ -1,0 +1,36 @@
+version: "3.0"
+services: 
+    application:
+        container_name: flask
+        image: flask
+        build:
+            context: .
+            dockerfile: .docker/flask.development.dockerfile
+        ports:
+            - "5000:5000"
+        env_file: .docker/env/app.development.env
+        working_dir: /var/www/profile
+        networks: 
+            - main
+        depends_on:
+            - redis
+    worker:
+        image: flask
+        command: python manage.py run_worker
+        depends_on: 
+            - flask
+            - redis 
+    
+    redis:
+        container_name: redis
+        image: redis
+        build: 
+            context: .
+            dockerfile: .docker/redis.development.dockerfile
+            ports: 
+                - "6379"
+            networks: 
+                - main
+networks: 
+    main:
+        driver: bridge

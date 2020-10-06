@@ -9,6 +9,7 @@ class Config(object):
     SECRET_KEY = 'this-really-needs-to-be-changed'   # AWS key
 
 
+
 class ProductionConfig(Config):
     DEBUG = False
 
