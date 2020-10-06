@@ -18,7 +18,7 @@
   <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
     <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
 <!--     <li><a href="#clients-section" class="nav-link">Client</a></li> -->
-    <li><a href="#contact-section" class="nav-link">Contact</a></li>
+    <li><a href="#contact-section" class="nav-link">Feedback</a></li>
   </ul>
 </nav>
 {% endblock %}
@@ -29,11 +29,12 @@
   <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
     <div class="row">
       <div class="col-lg-6">
-        <h1 class="text-black">I'm Shreyas Pimpalkar</h1>
-        <p class="lead">I'm Graduate Student at University at Buffalo</p>
+        <h1>Hello!!</h1>
+        <h2 class="text-black">I'm Shreyas Pimpalkar</h2>
+        <p class="lead">I'm a Graduate Student at University at Buffalo</p>
         <p>Currently pursuing Master's in Data Science</p>
         <p>
-          <a href="/downloadfile/shreyaspimpalkar.pdf" class="btn smoothscroll btn-primary">Resume</a>
+          <a href="https://shreyas-personal.s3.amazonaws.com/Resume.pdf" class="btn smoothscroll btn-primary" target="_blank">Resume</a>
           <a href="https://github.com/shreyas10p" target="_blank" class="btn smoothscroll btn-secondary">Github</a>
           <a href="https://www.linkedin.com/in/shreyaspimpalkar" target="_blank" class="btn smoothscroll btn-ternary">LinkedIn</a>
         </p>
@@ -113,12 +114,16 @@
       <div class="col-lg-4 order-2 order-lg-1">
         <p>"You can win by effort, by commitment, by ambition, by quality, by expressing yourself individually, but in team context."</p>
         <p>
-          With 2+ years of full-stack development experience for global businesses. I am focused and dedicated individual with a passion for crafting clean and simple interfaces. I enjoy building application with modern languages and frameworks like JavaScript,C,php,python and nodejs.
+          With 2+ years of full-stack development experience for global businesses. 
+          I am focused and dedicated individual with a 
+          passion for crafting clean and simple interfaces. 
+          I enjoy building application with modern languages and frameworks like JavaScript,C,python and nodejs.
         </p>
       </div>
       <div class="col-lg-4 order-3 order-lg-3">
-        <p>I have always been a company man with commitment towards goals and ambitions of the company. In the past I have worked on several web applications which have been a great asset to the companies.</p>
-        <p><a href="#contact-section" class="btn smoothscroll btn-primary">Contact Me</a></p>
+        <p> 
+          I have always been a company man with commitment towards goals and ambitions of the company. 
+          In the past I have worked on several web applications which have been a great asset to the companies.</p>
       </div>
 
     </div>
@@ -144,12 +149,20 @@
         <a title="Hasbinary Services" href="http://hashbinary.com/" class="item-wrap" target="blank">
           <img class="img-fluid" src="{{ url_for('static', filename='images/hashbinary_1.png') }}">
         </a>
+        <p>Worked with senior developer to manage large, complex design projects for corporate clients.
+
+        </p>
+        <p>Complete detailed programming and development task for public and internal websites as well as challenging back-end server code.
+        </p>
       </div>
       <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
         <a title="IRIS Business Services"
          href="http://www.irisbusiness.com/" class="item-wrap" target="blank">
           <img class="img-fluid" src="{{ url_for('static', filename='images/iris.png') }}">
         </a>
+        <p>Worked on the financial reporting and conceptualizing the making of insights and intelligence available to the clients based on the data of the tax fillings.
+
+        </p>
       </div>
 
       <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
@@ -157,26 +170,15 @@
          href="http://www.iitb.ac.in/" class="item-wrap" target="blank">
           <img class="img-fluid" src="{{ url_for('static', filename='images/iitb.jpg') }}">
         </a>
+        <p>
+          Developed and managed an application which collected data using the web scrappers from various social media platforms and stored data in NO SQL servers.
+        </p>
+        <p>
+          Performed visualisation of the data using D3.js
+        </p>
+  
       </div>
 
-      <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-
-       <p>• Worked with senior developer to manage large, complex design projects for corporate clients.</p>
-<p>• Complete detailed programming and development task for public and internal websites as well as challenging back-end server code.
-</p>
-
-      </div>
-
-      <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-
-       <p>• Worked on the financial reporting and conceptualizing the making of insights and intelligence available to the clients based on the data of the tax fillings.</p>
-
-
-      </div>
-      <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-      <p>• Build and managed an application which collected data using the web scrappers from various social media platforms and stored data in NO SQL servers.</p>
-      <p>• Performed text analysis on the collected data based and performed visualisation of the data using D3.js</p>
-    </div>
   </div>
 
 </section>
@@ -187,7 +189,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 mb-5 position-relative">
-        <h2 class="section-title text-center mb-5 text-white">testimonials</h2>
+        <h2 class="section-title text-center mb-5 text-white">Achievements</h2>
       </div>
     </div>
     <div class="owl-carousel slide-one-item">
@@ -215,35 +217,25 @@
 {% endblock %}
 
 {% block clients %}
-<!-- <section class="site-section"  id="clients-section">
+<section class="site-section"  id="clients-section">
   <div class="container">
     <div class="row">
       <div class="col-12 mb-5 position-relative">
-        <h2 class="section-title text-center">Clients</h2>
+        <h2 class="section-title text-center">Certification</h2>
       </div>
       <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-        <img src="images/logo_1.jpg" alt="Image" class="img-fluid">
+        <a target="_blank" title="Hackerrank problem solving basic" href="https://www.hackerrank.com/certificates/23a12f1433eb">
+          <img src="{{ url_for('static', filename='images/certi_problem_solving.png') }}" alt="Image" class="img-fluid">
+        </a>
       </div>
       <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-        <img src="images/logo_2.jpg" alt="Image" class="img-fluid">
-      </div>
-      <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-        <img src="images/logo_3.jpg" alt="Image" class="img-fluid">
-      </div>
-      <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-        <img src="images/logo_4.jpg" alt="Image" class="img-fluid">
-      </div>
-
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-        <img src="images/logo_5.jpg" alt="Image" class="img-fluid">
-      </div>
-      <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-        <img src="images/logo_6.jpg" alt="Image" class="img-fluid">
+        <a target="_blank" href="https://www.hackerrank.com/certificates/9cc58a23eeee" title="Hackerrank python basic">
+          <img src="{{ url_for('static', filename='images/certi_python.png') }}" alt="Image" class="img-fluid">
+        </a>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 {% endblock %}
 
 
@@ -252,34 +244,21 @@
   <div class="container">
     <div class="row">
       <div class="col-12 mb-5 position-relative">
-        <h2 class="section-title text-center mb-5">Contact Form</h2>
+        <h2 class="section-title text-center mb-5">Thank you for visiting!!</h2>
+        <p class="lead">Help me improve my profile.</p>
       </div>
     </div>
     <form action="#" class="form">
       <div class="row mb-4">
         <div class="form-group col-6">
-          <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="form-group col-6">
-          <input type="text" class="form-control" placeholder="Last name">
+          <input type="email" class="form-control" placeholder="Email address(Not mandatory).">
         </div>
       </div>
 
       <div class="row mb-4">
         <div class="form-group col-12">
-          <input type="email" class="form-control" placeholder="Email address">
-        </div>
-      </div>
-
-      <div class="row mb-4">
-        <div class="form-group col-12">
-          <input type="text" class="form-control" placeholder="Subject of the message">
-        </div>
-      </div>
-
-      <div class="row mb-4">
-        <div class="form-group col-12">
-          <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Type your message here.."></textarea>
+          <textarea name="" id="" cols="30" rows="5" 
+          class="form-control" placeholder="Any comments on my profile, resume that would help me improve?"></textarea>
         </div>
       </div>
 
@@ -298,7 +277,8 @@
 <div class="row mb-5">
   <div class="col-md-3">
     <h3 class="footer-title">Me Address</h3>
-    <p><span class="d-inline-block d-md-block"></span> </p>
+    <p>Buffalo,New York<span class="d-inline-block d-md-block"></span> 
+    </p>
   </div>
   <div class="col-md-5 mx-auto">
     <div class="row">
@@ -319,22 +299,22 @@
         </ul>
       </div> -->
       <div class="col-lg-4">
-        <h3 class="footer-title">Links</h3>
+        <!-- <h3 class="footer-title">Links</h3>
         <ul class="list-unstyled">
           <li><a href="#">Web App</a></li>
           <li><a href="#">Graphic</a></li>
           <li><a href="#">Branding</a></li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </div>
   <div class="col-md-3">
-    <h3 class="footer-title">Follow Me</h3>
-    <a href="#" class="social-circle"><span class="icon-twitter"></span></a>
-    <a href="#" class="social-circle"><span class="icon-facebook"></span></a>
-    <a href="#" class="social-circle"><span class="icon-instagram"></span></a>
-    <a href="#" class="social-circle"><span class="icon-dribbble"></span></a>
-    <a href="#" class="social-circle"><span class="icon-linkedin"></span></a>
+    <h3 class="footer-title">Social Accounts</h3>
+    <!-- <a href="#" class="social-circle"><span class="icon-twitter"></span></a> -->
+    <a href="https://www.facebook.com/shreyas.pimpalkar" class="social-circle"><span class="icon-facebook"></span></a>
+    <a href="https://www.instagram.com/shreyas10p" class="social-circle"><span class="icon-instagram"></span></a>
+    <!-- <a href="#" class="social-circle"><span class="icon-dribbble"></span></a> -->
+    <a href="https://www.linkedin.com/in/shreyaspimpalkar/" class="social-circle"><span class="icon-linkedin"></span></a>
   </div>
 </div>
 {% endblock %}

@@ -1,5 +1,6 @@
 from flask import Flask,render_template,send_file
 import os
+from livereload import Server
 
 DOWNLOAD_FOLDER = 'static/files/'
 app = Flask(__name__)
@@ -16,9 +17,6 @@ def downloadFile(filename):
 
 
 
-
-
-
-
 if __name__ == '__main__':
-    app.run()
+    server = Server(app.wsgi_app)
+    server.serve()
