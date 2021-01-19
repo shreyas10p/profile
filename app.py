@@ -33,7 +33,9 @@ def downloadFile(filename):
 @app.route("/suggestions",methods=["POST"])
 def add_task():
     data = request.form
-    print(data)
+    with open('comments.txt', 'a') as file:
+        file.write('\n\nemail: '+data['email']+'\ncomment:'+data['suggest'])
+    return "success"
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)

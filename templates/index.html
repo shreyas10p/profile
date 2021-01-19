@@ -8,7 +8,9 @@
     <li><a href="#home-section" class="nav-link">Home</a></li>
 <!--     <li><a href="#services-section" class="nav-link">Services</a></li> -->
     <li><a href="#about-section" class="nav-link">About</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
 
+    
   </ul>
 </nav>
 {% endblock %}
@@ -217,6 +219,107 @@
 </section> -->
 {% endblock %}
 
+{% block projects %}
+<section class="site-section"  id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-5 position-relative">
+        <h2 class="section-title text-center">Projects</h2>
+      </div>
+      <div class="row" style="margin-bottom: 2%;">
+        <div class="col-12 mb-2 position-relative">
+        <h5>Application Development Projects</h5>
+        </div>
+        <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/loadbalancer">
+            <label style="cursor: pointer;">Load Balancer</label>
+          </a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/MovieAnalyser">
+            <label style="cursor: pointer;">Movies Data Analysis</label>
+          </a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/project4">
+            <label style="cursor: pointer;">Analysis and visualising Twitter Data</label>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="row" style="margin-bottom: 2%;">
+        <div class="col-12 mb-2 position-relative">
+        <h5>Machine Learning Projects</h5>
+        </div>
+        <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/MachineLearning_CSE574">
+            <label style="cursor: pointer;">Classification and Regression</label>
+          </a>
+        </div>
+        <div class="col-4 col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/ML_proj2">
+            <label style="cursor: pointer;">Handwritten Digits Classification</label>
+          </a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/ML_proj3">
+            <label style="cursor: pointer;">Logistic Regression and SVM</label>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="row" style="margin-bottom: 2%;">
+        <div class="col-12 mb-2 position-relative">
+        <h5>Information Retrieval Projects</h5>
+        </div>
+        <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/IR_CSE574/tree/main/project1">
+            <label style="cursor: pointer;">Collecting and Storing Twitter Data</label>
+          </a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/IR_CSE574/tree/main/project2">
+            <label style="cursor: pointer;">Boolean Query and Inverted Index</label>
+          </a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/IR_CSE574/tree/main/project3">
+            <label style="cursor: pointer;">Evaluating IR Models</label>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="row" style="margin-bottom: 2%;">
+        <div class="col-12 mb-2 position-relative">
+        <h5>Data Query Models</h5>
+        </div>
+        <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/DataQueryModels/tree/main/spimpalk_proj1">
+            <label style="cursor: pointer;">Design and Implement DB SCHEMA</label>
+          </a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/DataQueryModels/tree/main/spimpalk_pa2">
+            <label style="cursor: pointer;">SQL Queries on sakila Database</label>
+          </a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+          <a target="_blank" href="https://github.com/shreyas10p/DataQueryModels/tree/main/spimpalk_proj2">
+            <label style="cursor: pointer;">XML and Xquery</label>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
 {% block clients %}
 <section class="site-section"  id="clients-section">
   <div class="container">
@@ -246,20 +349,20 @@
     <div class="row">
       <div class="col-12 mb-5 position-relative">
         <h2 class="section-title text-center mb-5">Thank you for visiting!!</h2>
-        <p class="lead">Help me improve my profile.</p>
+        <p class="lead">Contact me.</p>
       </div>
     </div>
     <form action="#" class="form" id="suggestion-form">
       <div class="row mb-4">
         <div class="form-group col-6">
-          <input type="email" id="email" class="form-control" placeholder="Email address(Not mandatory).">
+          <input type="email" id="email" class="form-control" placeholder="Email address">
         </div>
       </div>
 
       <div class="row mb-4">
         <div class="form-group col-12">
           <textarea name="suggestions" id="suggestions" cols="30" rows="5" 
-          class="form-control" placeholder="Any comments on my profile, resume that would help me improve?"></textarea>
+          class="form-control" placeholder="Comments "></textarea>
         </div>
       </div>
 

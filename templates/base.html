@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
 
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-datepicker.css') }}">
@@ -24,6 +25,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-toast-plugin.css') }}">
     {% endblock %}
   </head>
 
@@ -43,7 +45,7 @@
     </div>
 
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
+      <input value="{{request.base_url}}" type="hidden" id="base-url">
       <div class="container-fluid">
         <div class="row align-items-center justify-content-center">
 
@@ -95,6 +97,9 @@
     {% block testimonials %}
     {% endblock %}
 
+    {% block projects %}
+    {% endblock %}
+
     {% block clients %}
     {% endblock %}
 
@@ -106,16 +111,6 @@
       <div class="container">
         {% block address %}
         {% endblock %}
-
-        <div class="row">
-          <div class="col-12 text-center">
-          <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            </div>
-        </div>
       </div>
     </footer>
 
@@ -133,8 +128,9 @@
   <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
   <script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
   <script src="{{ url_for('static', filename='js/custom/index.js') }}"></script>
-
+  <script src="{{ url_for('static', filename='js/jquery-toast-plugin.js') }}"></script>
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  
   {% endblock %}
   </body>
 </html>
